@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
-    background:  gray;
+    background: gray;
 }
 
 .container {
@@ -15,13 +17,16 @@ body {
     margin: 50px auto;
     text-align: center;
     padding: 20px;
-    background: #fff;
+    /* background: #fff; */
+    position: relative; 
 }
 
 h1 {
     margin-bottom: 25px;
+    position: relative;
 }
-.h1::after{
+
+h1::after {
     content: "";
     width: 75px;
     height: 3px;
@@ -43,7 +48,7 @@ h1 {
     margin: 20px 0;
     font-size: 20px;
     padding: 20px;
-    border: 2px solid #ddd;
+    border: 2px solid;
     border-radius: 10px;
     min-height: 120px;
 }
@@ -61,9 +66,9 @@ button:hover {
 }
 
 .switch {
-    margin-top: 20px;
-    position: relative;
-    display: inline-block;
+    position: absolute; 
+    top: 14px;
+    right: 20px;
     width: 60px;
     height: 34px;
 }
