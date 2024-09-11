@@ -71,6 +71,9 @@ decreaseFontButton.addEventListener('click', function () {
     }
 });
 
+modeToggle.addEventListener('change', function () {
+    document.body.classList.toggle('dark-mode');
+});
 
 displayQuote();
 updateFontSize();
